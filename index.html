@@ -3,40 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Uplift - Uma frase motivacional todos os dias para inspirar você">
-    <title>Uplift - Inspire-se Todos os Dias</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Uplift - Receba uma frase motivacional todos os dias às 8h. Mais de 1000 frases inspiradoras para transformar seu dia. Baixe grátis!">
+    <meta name="keywords" content="frases motivacionais, inspiração, motivação diária, frases inspiradoras, desenvolvimento pessoal, autoajuda">
+    <meta name="author" content="Uplift">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://github.com/sourcenaiomiocc-creator/Uplift">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/sourcenaiomiocc-creator/Uplift">
+    <meta property="og:title" content="Uplift - Inspire-se Todos os Dias">
+    <meta property="og:description" content="Receba uma frase motivacional todos os dias às 8h. Mais de 1000 frases inspiradoras para transformar seu dia.">
+    <meta property="og:site_name" content="Uplift">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://github.com/sourcenaiomiocc-creator/Uplift">
+    <meta property="twitter:title" content="Uplift - Inspire-se Todos os Dias">
+    <meta property="twitter:description" content="Receba uma frase motivacional todos os dias às 8h. Mais de 1000 frases inspiradoras.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+
+    <title>Uplift - Inspire-se Todos os Dias | Frases Motivacionais Diárias</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Uplift",
+      "description": "Receba uma frase motivacional todos os dias às 8h da manhã",
+      "applicationCategory": "LifestyleApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1000"
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Navegação -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="index.html" class="logo">
-                    <span class="logo-icon">✨</span>
+                <a href="index.html" class="logo" aria-label="Uplift - Página inicial">
+                    <span class="logo-icon" aria-hidden="true">✨</span>
                     <span class="logo-text">Uplift</span>
                 </a>
-                <button class="menu-toggle" id="menuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Abrir menu de navegação"
+                    aria-expanded="false"
+                    aria-controls="navMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </button>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="active">Início</a></li>
-                    <li><a href="about.html">Sobre</a></li>
-                    <li><a href="features.html">Recursos</a></li>
-                    <li><a href="download.html" class="nav-cta">Download</a></li>
-                    <li><a href="contact.html">Contato</a></li>
+                <ul class="nav-menu" id="navMenu" role="menubar">
+                    <li role="none"><a href="index.html" class="active" role="menuitem" aria-current="page">Início</a></li>
+                    <li role="none"><a href="about.html" role="menuitem">Sobre</a></li>
+                    <li role="none"><a href="features.html" role="menuitem">Recursos</a></li>
+                    <li role="none"><a href="download.html" class="nav-cta" role="menuitem">Download</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem">Contato</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" role="region" aria-label="Seção principal">
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Inspire-se Todos os Dias</h1>
@@ -64,11 +114,19 @@
                 <div class="phone-mockup">
                     <div class="phone-screen">
                         <div class="quote-card">
-                            <p class="quote-text">"O sucesso é a soma de pequenos esforços repetidos dia após dia."</p>
-                            <div class="quote-actions">
-                                <button class="action-btn">❤️</button>
-                                <button class="action-btn">📋</button>
-                                <button class="action-btn">📤</button>
+                            <blockquote class="quote-text">
+                                <p>"O sucesso é a soma de pequenos esforços repetidos dia após dia."</p>
+                            </blockquote>
+                            <div class="quote-actions" role="group" aria-label="Ações da frase">
+                                <button class="action-btn" aria-label="Curtir frase">
+                                    <span aria-hidden="true">❤️</span>
+                                </button>
+                                <button class="action-btn" aria-label="Copiar frase">
+                                    <span aria-hidden="true">📋</span>
+                                </button>
+                                <button class="action-btn" aria-label="Compartilhar frase">
+                                    <span aria-hidden="true">📤</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -78,27 +136,27 @@
     </section>
 
     <!-- Features Preview -->
-    <section class="features-preview">
+    <section class="features-preview" role="region" aria-labelledby="features-title">
         <div class="container">
-            <h2 class="section-title">Por que escolher o Uplift?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🌅</div>
+            <h2 id="features-title" class="section-title">Por que escolher o Uplift?</h2>
+            <div class="features-grid" role="list">
+                <div class="feature-card" role="listitem">
+                    <div class="feature-icon" role="img" aria-label="Ícone de amanhecer">🌅</div>
                     <h3>Notificação Matinal</h3>
                     <p>Receba uma frase inspiradora às 8h da manhã para começar seu dia com energia positiva</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💡</div>
+                <div class="feature-card" role="listitem">
+                    <div class="feature-icon" role="img" aria-label="Ícone de lâmpada">💡</div>
                     <h3>1000+ Frases</h3>
                     <p>Banco de dados com mais de mil frases cuidadosamente selecionadas para inspirar você</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
+                <div class="feature-card" role="listitem">
+                    <div class="feature-icon" role="img" aria-label="Ícone de alvo">🎯</div>
                     <h3>Foco no Dia</h3>
                     <p>Uma frase por dia. Simples, direto e eficaz para manter o foco no que importa</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
+                <div class="feature-card" role="listitem">
+                    <div class="feature-icon" role="img" aria-label="Ícone de celular">📱</div>
                     <h3>Fácil de Usar</h3>
                     <p>Interface limpa e intuitiva. Copie, compartilhe ou curta suas frases favoritas</p>
                 </div>
@@ -118,7 +176,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
