@@ -83,11 +83,13 @@ Edite os arquivos HTML para personalizar textos e imagens.
 
 ## 📝 Licença
 
-MIT License
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## 🤝 Contribuindo
 
 Pull requests são bem-vindos! Para mudanças maiores, abra uma issue primeiro.
+
+Para mais informações sobre como contribuir, leia o guia de contribuição em [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
